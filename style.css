@@ -1,0 +1,313 @@
+body {
+    font-family: "Handjet", sans-serif;
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+h1, h2, p {
+    font-family: 'Handjet', sans-serif;
+    font-weight: bold;
+}
+
+.descriptionBox{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    overflow: hidden;
+}
+
+.inputField, .answer, button {
+    font-family: 'Handjet', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6vw;
+    margin: 0;
+    padding-top: 10px; /* Ensure there's no extra padding */
+    padding-bottom: 3%;
+}
+
+.circles {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(143.3deg, rgb(243, 76, 115) 33.1%, rgb(237, 220, 107) 74.9%);
+    width: 70vmin;
+    height: 70vmin;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.circle3 {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h3{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.circle2 {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#circle1{
+    background: linear-gradient(143.3deg, rgb(245, 108, 172) 33.1%, rgb(187, 237, 107) 74.9%);
+}
+#circle2{
+    background: linear-gradient(143.3deg, rgb(249, 108, 204) 33.1%, rgb(107, 237, 111) 74.9%);
+}
+#circle3{
+    background: linear-gradient(143.3deg, rgb(241, 124, 245) 33.1%, rgb(107, 237, 215) 74.9%);
+}
+#circle4{
+    background: linear-gradient(143.3deg, rgb(222, 140, 249) 33.1%, rgb(107, 228, 237) 74.9%);
+}
+#circle5{
+    background: linear-gradient(143.3deg, rgb(195, 135, 248) 33.1%, rgb(118, 239, 247) 74.9%);
+}
+.circle2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.inputField, .answer, button {
+    width: 80%;
+    height: 50px;
+    margin: 0.5em 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.inputField {
+    background: radial-gradient(circle at 10% 20%, rgba(234, 249, 249, 0.67) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+    text-align: center;
+    padding: 5px;
+    font-size: 2vw;
+}
+
+.value {
+    width: 55%;
+    height: 40px; /* Slightly smaller height */
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5vw; /* Reduced font size */
+    margin-right: 10%;
+    font-family: 'Handjet', sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+    width: 80%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.answer::before {
+    content: attr(data-placeholder);
+    color: rgb(63, 63, 63);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 1em;
+}
+
+.answer:empty::before {
+    display: block;
+}
+
+.answer:not(:empty)::before {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    overflow: hidden;
+}
+
+.But1 {
+    font-weight: bold;
+    background: linear-gradient(120deg,  #aefe89 0%, #66a6ff 100%);
+}
+
+.But1:hover {
+    background: linear-gradient(120deg,  #92ec68 0%, #4b8ddf 100%); /* Darker gradient on hover */
+}
+
+.But1:active {
+    background: linear-gradient(120deg,  #90e369 0%, #2a5bb6 100%); /* Even darker gradient on click */
+}
+
+.But2 {
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(143.3deg,  rgb(243, 76, 115) 33.1%, rgb(237, 220, 107) 74.9%);
+}
+
+.But2:hover {
+    background: linear-gradient(143.3deg, rgb(215, 30, 98) 33.1%, rgb(228, 210, 94) 74.9%); /* Darker gradient on hover */
+}
+
+.But2:active {
+    background: linear-gradient(143.3deg, rgb(172, 14, 74) 33.1%, rgb(190, 173, 62) 74.9%); /* Even darker gradient on click */
+}
+
+.write, .answer, button {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: calc(1vw + 1vh);
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    flex-basis: 20%; /* Adjusted size */
+    max-width: 100%; /* Ensure it doesn't exceed container */
+}
+.display1 {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed container */
+}
+
+h2 {
+    font-size: 1.5vw; /* Adjusted font size */
+    margin-left: 10%;
+}
+
+.value {
+    width: 55%;
+    height: 40px; /* Slightly smaller height */
+    font-size: 1.5vw; /* Reduced font size */
+}
+
+@media (max-width: 1200px) {
+    
+    .circles {
+        margin-left: 0%;
+    }
+    
+    h1 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 1em;
+        padding-bottom: 10%;
+    }
+
+    .circle1 {
+        width: 50vmin;
+        height: 50vmin;
+    }
+
+    .inputField {
+        font-size: 4vw;
+        overflow: hidden;
+    }
+
+    .answer {
+        height: 60px;
+        font-size: 4vw;
+    }
+
+    button {
+        font-size: 4vw;
+    }
+
+    .display {
+        flex-basis: auto; /* Allow it to resize on smaller screens */
+        max-width: 100%; /* Adjust max-width for mobile */
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    .value {
+        font-size: 4vw;
+    }
+    .display1 {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        max-width: 100%; /* Ensure it doesn't exceed container */
+    }
+}

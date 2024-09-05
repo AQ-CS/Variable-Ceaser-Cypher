@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="style">
+</head>
+<body>
+    <h1>Ceaser Cypher</h1>
+    <div class="container">
+        
+        <div class="circles">
+            <h3>Tip: Use all 5 shifters (the top one is for reference), 
+            if you use all, it takes 11,881,376 combinations to crack </h3>
+            <div class="circle1"> 
+                <img src="images/cypher outer-modified.png">
+                <div class="circle3"></div>
+                <div id="circle1" class="circle2">
+                    <img id="image2" class="inner" src="images/cypher inner-modified.png">
+                    <div class="circle3"></div>
+                    <div id="circle2" class="circle2">
+                        <img id="image3" class="inner" src="images/cypher inner-modified.png">
+                        <div class="circle3"></div>
+                        <div id="circle3" class="circle2">
+                            <img id="image4" class="inner" src="images/cypher inner-modified.png">
+                            <div class="circle3"></div>
+                            <div id="circle4" class="circle2">
+                                <img id="image4" class="inner" src="images/cypher inner-modified.png">
+                                <div class="circle3"></div>
+                                <div id="circle5" class="circle2">
+                                    <img id="image5" class="inner" src="images/cypher inner-modified.png">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="textBox">
+            <div class="display1">
+                <div class="display first">  
+                    <h2 id="angle-info1">Shift First: </h2>
+                    <input class="value" type="number" id="angle-input1" value="0" min="-1" max="26">
+                </div>
+                <div class="display second">  
+                    <h2 id="angle-info2">Shift Second: </h2>
+                    <input class="value" type="number" id="angle-input2" value="0" min="-1" max="26">
+                </div>
+                <div class="display third">  
+                    <h2 id="angle-info3">Shift Third: </h2>
+                    <input class="value" type="number" id="angle-input3" value="0" min="-1" max="26">
+                </div>
+                <div class="display fourth">  
+                    <h2 id="angle-info4">Shift Fourth: </h2>
+                    <input class="value" type="number" id="angle-input4" value="0" min="-1" max="26">
+                </div>
+                <div class="display fifth">  
+                    <h2 id="angle-info5">Shift Fourth: </h2>
+                    <input class="value" type="number" id="angle-input5" value="0" min="-1" max="26">
+                </div>
+            </div>
+            <input class="inputField" type="text" id="user-input" placeholder="Type here to decypher" style="font-size: 20px;">
+            <div class="answer" data-placeholder="Answer will appear here..."></div>
+            <button class="But1">Cypher</button>
+            <button class="But2">Decypher</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
